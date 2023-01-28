@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.package_token }}
           
       - name: Build and Push images
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v3.3.0
         with:
           context: .
           file: ./Dockerfile
