@@ -1,9 +1,9 @@
 FROM caddy:builder AS builder
 
 RUN xcaddy build \
-    --github.com/caddy-dns/cloudflare \
-    --github.com/RussellLuo/caddy-ext/ratelimit \
-    --github.com/porech/caddy-maxmind-geolocation
+    --with github.com/caddy-dns/cloudflare \
+    --with github.com/RussellLuo/caddy-ext/ratelimit \
+    --with github.com/porech/caddy-maxmind-geolocation
 
 FROM caddy:alpine
 
