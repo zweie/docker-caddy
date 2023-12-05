@@ -6,9 +6,9 @@ on:
         description: 'Log level'
         required: true
         default: 'info'
-  schedule:
+  # schedule:
     # Run at 02:01 on the 3rd of every month
-    - cron: '1 2 3 * *'
+    # - cron: '1 2 3 * *'
 
 env:
   TZ: Asia/Shanghai
